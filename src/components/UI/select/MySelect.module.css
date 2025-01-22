@@ -1,0 +1,27 @@
+.selectWrapper {
+    width: 100%;
+    position: relative;
+}
+
+.selectWrapper select {
+    width: 240px;
+    height: 54px;
+    border: none;
+    padding: 0 20px;
+    border-radius: 6px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.selectWrapper select::-ms-expand {
+    display: none;
+}
+
+.selectArrow {
+    content: url(../../../img/fi-rs-angle-small-down.png);
+    position: absolute;
+    right: 10px;
+    bottom: 18px;
+    pointer-events: none;
+}

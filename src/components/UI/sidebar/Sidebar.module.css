@@ -1,0 +1,94 @@
+.sidebar {
+    background-color: var(--color-pannel);
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.2s;
+    z-index: 49;
+}
+
+@media (max-width: 1100px) {
+    .sidebar {
+        width: 320px;
+    }
+}
+
+.sidebar.active {
+    transform: translateX(0)
+}
+
+.sidebarContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.sidebarCloseButtonWrapper {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.sidebarCloseButton {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 16px;
+}
+
+@media (min-width: 767.98px) {
+    .sidebarCloseButtonWrapper {
+        display: none !important;
+    }
+}
+
+.sidebarCloseButton::after,
+.sidebarCloseButton::before {
+    content: '';
+    position: absolute;
+    background-color: #FFFFFF;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+}
+
+.sidebarCloseButton::after {
+    rotate: 45deg;
+}
+
+.sidebarCloseButton::before {
+    rotate: -45deg;
+}
+
+.sidebarInputWrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sidebarLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 200px;
+}
+
+@media (max-width: 767.98px) {
+    .sidebarLogo {
+        display: none !important;
+    }
+
+    .sidebarInputWrapper {
+        margin-top: 10px;
+    }
+}

@@ -1,19 +1,23 @@
 import React from 'react'
+import classes from './MySelect.module.css'
 
-const MySelect = ({option, defaultValue, value, onChange}) => {
+const MySelect = ({ option, defaultValue, value, onChange }) => {
   return (
-    <select 
-        name="" 
+    <div className={classes.selectWrapper}>
+      <select
+        name=""
         id=""
         value={value}
         onChange={event => onChange(event.target.value)}>
         <option disabled value="">{defaultValue}</option>
         {option.map(option =>
-            <option key={option.value} value={option.value}>
-                {option.name}
-            </option>
+          <option key={option.value} value={option.value}>
+            {option.name}
+          </option>
         )}
-    </select>
+      </select>
+      <div className={classes.selectArrow}></div>
+    </div>
   )
 }
 

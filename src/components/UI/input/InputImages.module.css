@@ -1,0 +1,18 @@
+.inputImages label{
+    display: inline-block;
+    padding: 6px 12px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-color: inherit;
+    background-image: url('../../../img/Frame\ 11.png');
+    background-repeat: no-repeat;
+    background-size: 100% cover;
+    background-position: center;
+    border-radius: 4px;
+    border: 2px dashed rgba(245, 245, 245, 1);
+}
+
+.inputImages input {
+    display: none;
+}

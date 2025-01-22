@@ -1,0 +1,16 @@
+.deleteButton {
+    padding: 0 22px 0;
+    color: #0D2D3D;
+    background: rgba(245, 245, 245, 1);
+    border: none;
+    border-radius: 6px;
+    height: 34px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    line-height: 20px;
+}
+
+.deleteButton.disable {
+    display: none;
+}

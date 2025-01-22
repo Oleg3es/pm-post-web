@@ -1,0 +1,10 @@
+.editButton {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url('./../../../img/pencil\ 1.png');
+    border: none;
+    background-color: inherit;
+    background-position: 100% cover;
+    background-repeat: no-repeat;
+}

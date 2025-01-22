@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PostItem from './PostItem'
-import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
-function PostList({ posts, title, remove }) {
+function PostList({ posts, title, onEdit }) {
 
     if (!posts.length) {
         return (
@@ -13,18 +12,19 @@ function PostList({ posts, title, remove }) {
     }
 
     return (
-        <div>
+        <div className="post-list">
             <h1>{title}</h1>
-            <TransitionGroup>
-                {posts.map((post, index) =>
-                    <CSSTransition
-                        key={post.id}
-                        timeout={500}
-                        classNames="post">
-                        <PostItem remove={remove} number={index + 1} post={post} />
-                    </CSSTransition>
-                )}
-            </TransitionGroup>
+            {/* <TransitionGroup> */}
+            {posts.map((post) =>
+
+                <div
+                    key={post.id}
+                    timeout={500}
+                    className="post-item">
+                    <PostItem post={post} onEdit={onEdit} />
+                </div>
+            )}
+            {/* </TransitionGroup> */}
         </div>
     )
 }

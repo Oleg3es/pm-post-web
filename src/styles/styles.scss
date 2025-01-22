@@ -1,0 +1,17 @@
+@import
+    'normalize',
+    'fonts',
+    'mixins',
+    'media',
+    'variables',
+    'utils',
+    'global';
+
+@import 
+    './blocks/content',
+    './blocks/section',
+    './blocks/sidebar',
+    './blocks/header',
+    './blocks/posts',
+    './blocks/form', 
+    './blocks/post'

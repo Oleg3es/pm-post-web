@@ -1,0 +1,40 @@
+.mediaModal {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background: rgb(122, 52, 52, 0.4);
+}
+
+.mediaModalContent {
+    width: 80%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.mediaModal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mediaContent {
+    display: flex;
+    justify-content: center;
+}
+
+.mediaContent video{
+    width: 100%;
+}
+
+.mediaContent img{
+    width: 100%;
+}
+
+.mediaModuleControls {
+    
+}

@@ -1,4 +1,4 @@
-.remove-btn {
+  .remove-btn {
     margin-right: 0.5rem;
   }
   
@@ -16,3 +16,7 @@
     opacity: 0;
     transition: opacity 500ms ease-in;
   }
+
+  .post__btns {
+    color: aliceblue;
+}

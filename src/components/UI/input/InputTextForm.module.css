@@ -1,0 +1,15 @@
+.inputTextForm {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    background: #ffffff !important;
+    outline: none;
+    height: 100px;
+    width: 100%;
+    color: rgba(18, 54, 68, 1);
+    font-size: 15px;
+    resize: none;
+    padding: 10px 15px;
+}
